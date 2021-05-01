@@ -1,5 +1,6 @@
 Brotli==1.0.9
 click==7.1.2
+Cython==0.29.23
 dash==1.12.0
 dash-core-components==1.10.0
 dash-html-components==1.0.3
