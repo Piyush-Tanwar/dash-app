@@ -9,7 +9,7 @@ import dash
 from dash.dependencies import Input, Output
 import dash_core_components as dcc
 import dash_html_components as html
-import dash_bootstrap_components as dbc
+#import dash_bootstrap_components as dbc
 import dash_table
 
 
@@ -52,9 +52,8 @@ def graph1():
 def graph2():
     return dcc.Graph(id='bar_chart',figure=bar_chart(df_3))
 
-external_stylesheets = [dbc.themes.BOOTSTRAP]
 
-app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
+app = dash.Dash(__name__)
 server = app.server
 app.title = 'Tirupati byElections'
 
